@@ -8,6 +8,7 @@
 
 [node name="tank" type="CharacterBody2D"]
 position = Vector2(464, 274)
+scale = Vector2(0.2, 0.2)
 script = ExtResource("1_70h7h")
 
 [node name="body" type="Node2D" parent="."]

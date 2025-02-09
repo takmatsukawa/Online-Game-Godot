@@ -1,5 +1,15 @@
-[gd_scene format=3 uid="uid://ch8c05ti4xyqg"]
+[gd_scene load_steps=3 format=3 uid="uid://ch8c05ti4xyqg"]
+
+[ext_resource type="Script" path="res://base/main.gd" id="1_wer5p"]
+[ext_resource type="Texture2D" uid="uid://da7y4g8khgelm" path="res://base/bg_grid.png" id="2_oe2sj"]
 
 [node name="main" type="Node"]
+script = ExtResource("1_wer5p")
+
+[node name="bg" type="TextureRect" parent="."]
+offset_right = 40000.0
+offset_bottom = 40000.0
+texture = ExtResource("2_oe2sj")
+stretch_mode = 1
 
 [node name="players" type="Node2D" parent="."]
