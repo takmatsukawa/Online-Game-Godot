@@ -17,6 +17,8 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity = lerp(velocity, Vector2.ZERO, delta * 10)
 	
-	rotation += rotation_velosity
+	$body.rotation += rotation_velosity
+	
+	$cannon.look_at(get_global_mouse_position())
 
 	move_and_slide()
